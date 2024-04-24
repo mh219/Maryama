@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILOVEYOU.COM</title>
+    <style>
+        body {
+            background-color: black;
+            color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #question {
+            margin-top: 100px;
+            font-size: 30px;
+        }
+        #options {
+            margin-top: 50px;
+        }
+        .btn {
+            background-color: pink;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #ffb6c1;
+        }
+    </style>
+</head>
+<body>
+    <div id="question">Do you love me?</div>
+    <div id="options">
+        <button class="btn" onclick="love()">I hate you</button>
+        <button class="btn" onclick="love()">I love you</button>
+    </div>
+
+    <script>
+        function love() {
+            if (event.target.innerHTML === 'I hate you') {
+                alert("I love you more!");
+            } else {
+                alert("I love you!");
+            }
+        }
+    </script>
+</body>
+</html>
